@@ -1,12 +1,12 @@
 html {
   margin: 0;
-  padding:0;
-}
+  padding: 0;
+  box-sizing: border-box;
+  }
 
 body {
     margin: 0;
-    padding: 0 0;
-    box-sizing: border-box;
+    padding: 0;
     height: 100%;
     width: 100%;
     display: flex;
@@ -18,14 +18,12 @@ body {
 
 /* top_bar div */
 #top_bar {
-    height: 50px;
-    background-color: #c20707;
-    color: white;
+    height: 40px;
+    background: red;
+    padding: 0 50px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding-right: 70px;
-    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); */
+    justify-content: space-between;
 }
 
 #top_bar img {
@@ -35,30 +33,31 @@ body {
 }
 
 #top_bar p {
-    margin-right: 50px;
-    font-size: 18px;
+    color: white;
 }
 
 #top_bar button {
-    padding: 8px 16px;
-    border: none;
-    font-size: 18px;
-    background-color: #ff5c5c;
-    color: white;
-    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease;
+    padding: 4px 10px;
+    border-radius: 2px;
 }
 
+
 #top_bar button:hover {
-    background-color: #ff0000; /* Darker red */
+    background-color: grey;
+    color: white;
+
 }
 
 #top_bar img {
     width: 100px; /* Responsive width */
     height: auto;
     border-radius: 2px;
-    margin-right: 1370px; /* Rounded corners */
+
+   
 }
 
 
