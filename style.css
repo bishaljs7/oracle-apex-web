@@ -1,0 +1,258 @@
+html {
+  margin: 0;
+  padding:0;
+}
+
+body {
+    margin: 0;
+    padding: 0 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+    font-family: Arial, sans-serif;
+}
+
+
+/* top_bar div */
+#top_bar {
+    height: 50px;
+    background-color: #c20707;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 70px;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); */
+}
+
+#top_bar img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+}
+
+#top_bar p {
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+#top_bar button {
+    padding: 8px 16px;
+    border: none;
+    font-size: 18px;
+    background-color: #ff5c5c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#top_bar button:hover {
+    background-color: #ff0000; /* Darker red */
+}
+
+#top_bar img {
+    width: 100px; /* Responsive width */
+    height: auto;
+    border-radius: 2px;
+    margin-right: 1370px; /* Rounded corners */
+}
+
+
+/* banner div */
+#banner {
+    height: 350px;
+    width: 93%;
+    background-color: #357ab746;
+    margin: 10px auto;
+    background: url('img/pcps-main1.jpg') center / cover no-repeat;
+}
+
+/* Icons container styling */
+#icons-container {
+    height: 300px;
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.icon {
+    height: 300px;
+    width: 420px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.icon img {
+    width: 380px;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.icon p {
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 8px auto;
+    /* text-shadow: 2px 2px 2px rgba(1, 74, 122, 0.315); */
+}
+
+.icon:hover {
+    transform: translateY(-10px); /* Move up on hover */
+    box-shadow: 0 10px 10px rgba(255, 2, 99, 0.877); /* Subtle shadow */
+}
+
+
+/* Navigation buttons styling */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0; /* Increased padding for better spacing */
+    background-color: #a5660769;
+    width: 98%;
+    margin: 10px auto 0px;
+    border-radius: 8px;
+}
+
+.nav-buttons button {
+    margin: 0 15px; /* Increased margin for better spacing between buttons */
+    padding: 15px 30px; /* Increased padding for larger button size */
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 8px; /* Slightly more rounded corners */
+    cursor: pointer;
+    transition: background-color .3s ease;
+    font-size: 1.2rem; /* Larger font size for better visibility */
+}
+
+.nav-buttons button:hover {
+    background-color: #87d600e0; /* Darker blue on hover */
+}
+
+
+/* Content container styling */
+#content-container {
+    margin: 20px;
+    padding: 20px;
+    padding-left: 50px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Feedback form styling */
+#feedback-form {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#feedback-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#feedback-form button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#feedback-form button:hover {
+    background-color: #357ab7; /* Darker blue on hover */
+}
+
+
+
+#home-element {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+#home-element p {
+    font-size: 26px;
+    color: #920000;
+    text-align: justify;
+}
+
+#home-img {
+    margin-left: 100px;
+    width: 500px;
+    border-radius: 20px;
+ }
+
+
+#content-container {
+    /* width: 500px; */
+    height: 400px;
+    background: url('img/background.jpg') 0 0 / cover no-repeat;
+    /* background-color: rgba(255, 234, 207, 0.433); */
+    
+}
+
+.kiosk-heading {
+    font-size: 56px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 47, 255);
+}
+
+.courses-p {
+    font-size: 40px;
+    color: #920000;
+    text-align: center;
+    font-family: 'Times New Roman';
+    text-decoration: underline;
+    font-weight: bold;
+    text-shadow: 4px 4px 6px rgba(158, 158, 158, 0.952)
+}
+
+.courses-ul li {
+    padding-left: 500px;
+    text-align: left;
+    list-style: none;
+    font-size: 40px;
+    color: #920000;
+    text-shadow: 2px 2px 4px rgb(255, 204, 204);
+    
+}
+
+.fees {
+    margin-left: 100px;
+}
+
+.activities {
+    margin-left: 100px;
+}

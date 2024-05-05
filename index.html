@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PCPS Student Information Kiosk</title>
+</head>
+<body>
+    <!-- ... (other HTML content) -->
+
+    <div id="top_bar">
+        <img src="img/pcps-logo.jpg" alt="PCPS logo" title="PCPS logo">
+        <p>Phone: 01-5181198</p>
+        <button>Sign In</button>
+    </div>
+
+    <!-- Banner section -->
+    <div id="banner">
+    </div>
+
+    <!-- <h3>What do we Offer</h3> -->
+
+    <!-- Icons section -->
+    <div id="icons-container">
+        <div class="icon" title="Software Engineering">
+            <img src="img/software.jpg" alt="Software Engineering">
+            <p>Software Engineering</p>
+        </div>
+        <div class="icon" title="Business Administation">
+            <img src="img/bba.jpg" alt="Business Administation">
+            <p>Business Administation</p>
+        </div>
+        <div class="icon" title="Business Management">
+            <img src="img/bm.jpg" alt="Business Management">
+            <p>Business Management</p>
+        </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="nav-buttons">
+        <button id="homeBtn">Home</button>
+        <button id="coursesBtn">Courses</button>
+        <button id="feesBtn">Fees</button>
+        <button id="activitiesBtn">Activities</button>
+    </div>
+
+    <!-- Content container -->
+    <div id="content-container">
+        <!-- Content will be dynamically loaded here based on the button clicked -->
+        <p class="kiosk-heading">Welcome to PCPS!</p>
+        <p class="kiosk-heading">Click on the buttons above to learn more.</p>
+    </div>
+
+
+    <script>
+        // Get references to the buttons and content container
+        const homeBtn = document.getElementById('homeBtn');
+        const coursesBtn = document.getElementById('coursesBtn');
+        const feesBtn = document.getElementById('feesBtn');
+        const activitiesBtn = document.getElementById('activitiesBtn');
+        const contentContainer = document.getElementById('content-container');
+
+        // Add click event listeners to the buttons
+        homeBtn.addEventListener('click', () => {
+            contentContainer.innerHTML = `
+                <div id="home-element">
+                    <div>
+                        <p>PCPS College is a multilingual, diverse, multicultural institution of higher education that ensures intellectual, research, and informed teaching. It is an integral part of the Lord Buddha Education Foundation (LBEF), Nepal's first IT organization founded in 1998. PCPS College off ers International (UK) undergraduate and graduate programs in various fields of study, including Business, Hospitality Management, Information, and Technology with various opportunities to gain practical experience through internships, field visits, and project works.</p>
+                    </div>
+                    <div>
+                        <img id="home-img" src="img/college.jpg" alt="College Photo">
+                    </div>
+                </div>
+            `;
+        });
+
+        coursesBtn.addEventListener('click', () => {
+            contentContainer.innerHTML = `
+                <p class="courses-p">OUR COURSES</p>
+                <ul class="courses-ul">
+                    <li>- BSc (Hons) in Software Engineering</li>
+                    <li>- BSc (Hons) in Business Management</li>
+                    <li>- BSc (Hons) BM with Digital Marketing</li>
+                    <li>- BSc (Hons) BM with Finance</li>
+                    <li>- BSc (Hons) BM with Business Analytics</li>
+                </ul>
+            `;
+        });
+
+        feesBtn.addEventListener('click', () => {
+            contentContainer.innerHTML = `
+                <p class="courses-p">FEE STRUCTURE</p>
+                <ul class="courses-ul fees">
+                    <li>Tuition Fee: Rs. 2,46,000 /year</li>
+                    <li>Library Fee: Rs. 3,000 /year</li>
+                    <li>Lab Fee: Rs. 20,000 /year</li>
+                    <li>Semester End Exam Fee: Rs. 6,000 /year</li>
+                    <li>Internal and Other Activities Fee: Rs. 10,000 /year</li>
+                </ul>
+            `;
+        });
+
+        activitiesBtn.addEventListener('click', () => {
+            contentContainer.innerHTML = `
+                <p class="courses-p"p>UPCOMING ACTIVITIES</p>
+                <ul class="courses-ul activities">
+                    <li>- Coding Competitions and Hackathons</li>
+                    <li>- Tech Talks and Guest Lectures</li>
+                    <li>- Cultural Fest</li>
+                    <li>- Project Showcases</li>
+                    <li>- Internship and Placement Fairs</li>
+                </ul>
+            `;
+        });
+    </script>
+</body>
+</html>
